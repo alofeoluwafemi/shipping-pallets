@@ -10,7 +10,7 @@ class ShippingPricing {
 
     public function __construct()
     {
-        $this->endpoint = 'http://localhost:3001';
+        $this->endpoint = config('shipping.endpoint');
     }
 
     public function getCost(int $numOfPallets, $countryCode = 'GB', $postalCode = 'PE20 3PW'):array
